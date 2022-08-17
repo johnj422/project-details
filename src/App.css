@@ -1,5 +1,15 @@
+:root {
+  --main-bg-color: green;
+  --white: hsl(0, 0%, 100%);
+  --lightGray: hsl(270, 3%, 87%);
+  --darkGray: hsl(279, 6%, 55%);
+  --darkViolet: hsl(278, 68%, 11%);
+  --gradientBorder: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+  --errors: hsl(0, 100%, 66%);
+}
 .App {
-  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -7,7 +17,7 @@
 }
 
 .left-container{
-  border: 2px solid red;
+  border: 2px solid var(--main-bg-color);
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -25,7 +35,78 @@
 .right-container{
   border: 2px solid blue;
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
+  justify-content: center;
   height: 100%;
   width: 66.6666%;
+}
+.form{
+  border: none;
+  display: flex;
+  flex-direction:column;
+  align-items: flex-start;
+  align-self: center;
+  width: 50%;
+  margin-left: rem;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.info-labels{
+  margin: 0;
+  padding: 0 0 1rem 0;
+  align-items: flex-start;
+}
+.info label{
+  padding-right: 8rem;
+  
+  
+}
+.info-container{
+  margin: 0;
+  color: var(--lightGray);
+}
+.month{
+  width: 20%;
+  margin-right: 1rem;
+  color: var(--lightGray);
+}
+.year{
+  width: 20%;
+  margin-right: 1rem;
+}
+.cvc{
+  margin-left: 1rem;
+  width: 214px;
+
+}
+label{
+  padding-bottom: 1rem;
+  color: var(--darkViolet);
+}
+input{
+  width: 100%;
+  margin-bottom: 2rem;
+  border: 5px solid var(hsl(0, 100%, 66%));
+  height: 3rem;
+  border-radius: 10px;
+  text-indent: 1rem;
+  font-size: 18px;
+  color: var(--darkViolet);
+}
+input::placeholder{
+  color: var(--lightGray);
+}
+
+.button{
+  border: none;
+  width: 100%;
+  background-color: var(--darkViolet);
+  color: var(--white);
 }
