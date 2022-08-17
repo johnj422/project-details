@@ -38,7 +38,7 @@
 .back-card{
   position: relative;
   top: 12rem;
-  left: 1rem;
+  left: 15rem;
   width: auto;
   height: 17rem;
   background-image: url('./assets/images/bg-card-back.png');
