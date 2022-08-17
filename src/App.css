@@ -3,14 +3,16 @@
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: 900px;
 }
 
 .left-container{
   border: 2px solid red;
   display: flex;
   flex-direction: column;
-  height: 40rem;
-  width: 30%;
+  height: 100%;
+  width: 33.3333%;
+  background-image: url('../src/assets/images/bg-main-desktop.png');
 }
 .front-card{
   border: 2px solid purple;
@@ -24,6 +26,6 @@
   border: 2px solid blue;
   display: flex;
   flex-direction: column;
-  height: 40rem;
-  width: 70%;
+  height: 100%;
+  width: 66.6666%;
 }
